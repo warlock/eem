@@ -1,12 +1,12 @@
 {
   "name": "eem",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lightweight Event Emitter",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["signal", "stream", "reducible", "reduce", "event", "listener", "tap", "on", "dispatch", "emit", "emitter", "observe", "observer","trigger", "events","pubsu"],
   "author": "",
   "license": "ISC"
 }
