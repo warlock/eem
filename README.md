@@ -21,12 +21,15 @@ var eem = require("eem");
 
 ### Add listener:
 ```javascript
-eem.on('hi', function (name) {
-        console.log("Hi " + name + "!");
-});
-
 eem.on('bye', function (name) {
         console.log("Bye  " + name + "!");
+});
+```
+
+### Multi-listener:
+```javascript
+eem.on(['hi', 'hello'], function (name) {
+        console.log("Hi " + name + "!");
 });
 
 ```
