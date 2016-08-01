@@ -11,7 +11,7 @@ npm install eem
 
 ## Node.Js : Import module:
 ```javascript
-var e = require("eem");
+var eem = require("eem");
 ```
 
 ## Web : Import module:
@@ -21,11 +21,11 @@ var e = require("eem");
 
 ### Add listener:
 ```javascript
-e.on('hi', function (name) {
+eem.on('hi', function (name) {
         console.log("Hi " + name + "!");
 });
 
-e.on('bye', function (name) {
+eem.on('bye', function (name) {
         console.log("Bye  " + name + "!");
 });
 
@@ -33,17 +33,17 @@ e.on('bye', function (name) {
 
 ### Emit event:
 ```javascript
-e.emit('hi', 'master');
+eem.emit('hi', 'master');
 ```
 
 ### Multi-emit event:
 ```javascript
-e.emit(['hi', 'bye'], 'master');
+eem.emit(['hi', 'bye'], 'master');
 ```
 
 ### Remove listener:
 ```javascript
-e.remove('hi');
+eem.remove('hi');
 ```
 
 ### License
