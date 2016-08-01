@@ -3,8 +3,13 @@ var ee = require('events');
 module.exports = {
 	func : {},
 	on : function (ev, callback) {
-		if (ev === undefined || ev === null || ev === "") throw new Error('Need event');
-        else if (typeof callback !== 'function') throw Error('Event need function');
+		if (ev === undefined || ev === null || ev === "" || !ev instanceof Array) throw new Error('Need event');
+		else if (ev instanceof Array) {
+			for (var y = 0; y < ev.length; y++) {
+				if (typeof callback !== 'function') throw Error('Event need function');
+				else this.func[ev[y]] = callback;
+			}
+        } else if (typeof callback !== 'function') throw Error('Event need function');
 		else this.func[ev] = callback;
 	},
 	emit : function (ev, data) {
