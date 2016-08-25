@@ -1,7 +1,7 @@
 {
   "name": "eem",
-  "version": "0.0.4",
-  "description": "Lightweight Event Emitter",
+  "version": "0.0.5",
+  "description": "Lightweight Event Emitter for Node.js and Browser",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
