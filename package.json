@@ -1,6 +1,6 @@
 {
   "name": "eem",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Lightweight Event Emitter for Node.js and Browser",
   "main": "index.js",
   "scripts": {
@@ -11,10 +11,10 @@
     "url": "git+https://github.com/warlock/eem.git"
   },
   "keywords": ["signal", "stream", "reducible", "reduce", "event", "listener", "tap", "on", "dispatch", "emit", "emitter", "observe", "observer","trigger", "events","pubsu"],
-  "author": "Josep Subils Rigau <josep@spellbook.io> (http://spellbook.io)",
+  "author": "Josep Subils <js@js.gl> (http://js.gl)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/warlock/eem/issues"
   },
-  "homepage": "http://www.spellbook.io"
+  "homepage": "http://js.gl"
 }
