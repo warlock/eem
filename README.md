@@ -1,6 +1,6 @@
 eem
 ===
-> Lightweight Event Emitter for ES5
+> Lightweight Event Emitter
 
 ## INSTALL/DOWNLOAD
 http://npmjs.com/package/eem
@@ -11,7 +11,7 @@ npm install eem
 
 ## Node.Js : Import module:
 ```javascript
-var eem = require("eem");
+const eem = require("eem")
 ```
 
 ## Web : Import module:
@@ -21,38 +21,38 @@ var eem = require("eem");
 
 ### Add listener:
 ```javascript
-eem.on('bye', function (name) {
-        console.log("Bye  " + name + "!");
-});
+eem.on('bye', name => {
+  console.log("Bye  " + name + "!")
+})
 ```
 
 ### Multi-listener:
 ```javascript
-eem.on(['hi', 'hello'], function (name) {
-        console.log("Hi " + name + "!");
-});
+eem.on(['hi', 'hello'], name => {
+  console.log("Hi " + name + "!")
+})
 
 ```
 
 ### Emit event:
 ```javascript
-eem.emit('hi', 'master');
+eem.emit('hi', 'master')
 ```
 
 ### Multi-emit event:
 ```javascript
-eem.emit(['hi', 'bye'], 'master');
+eem.emit(['hi', 'bye'], 'master')
 ```
 
 ### Remove listener:
 ```javascript
-eem.remove('hi');
+eem.remove('hi')
 ```
 
 ### License
 All the code here is under MIT license. Which means you could do virtually anything with the code. I will appreciate it very much if you keep an attribution where appropriate.
 
-The MIT License (MIT) Copyright (c) 2015 Josep Subils Rigau (josep@spellbook.io)
+The MIT License (MIT) Copyright (c) 2015 Josep Subils (js@js.gl)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
