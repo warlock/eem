@@ -1,7 +1,7 @@
 {
   "name": "eem",
-  "version": "1.0.0",
-  "description": "Lightweight Event Emitter for Node.js and Browser",
+  "version": "1.0.1",
+  "description": "Event Emitter for Node.js and Browser",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +10,31 @@
     "type": "git",
     "url": "git+https://github.com/warlock/eem.git"
   },
-  "keywords": ["signal", "stream", "reducible", "reduce", "event", "listener", "tap", "on", "dispatch", "emit", "emitter", "observe", "observer","trigger", "events","pubsu"],
+  "keywords": [
+    "signal",
+    "stream",
+    "reducible",
+    "reduce",
+    "event",
+    "listener",
+    "tap",
+    "on",
+    "dispatch",
+    "emit",
+    "emitter",
+    "observe",
+    "observer",
+    "trigger",
+    "events",
+    "pubsu"
+  ],
   "author": "Josep Subils <js@js.gl> (http://js.gl)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/warlock/eem/issues"
   },
-  "homepage": "http://js.gl"
+  "homepage": "http://js.gl",
+  "dependencies": {
+    "tck": "^1.0.2"
+  }
 }

@@ -22,14 +22,14 @@ const eem = require("eem")
 ### Add listener:
 ```javascript
 eem.on('bye', name => {
-  console.log("Bye  " + name + "!")
+  console.log(`Bye  ${name}!`)
 })
 ```
 
 ### Multi-listener:
 ```javascript
 eem.on(['hi', 'hello'], name => {
-  console.log("Hi " + name + "!")
+  console.log(`Hi ${name}!`)
 })
 
 ```

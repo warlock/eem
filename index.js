@@ -1,27 +1,29 @@
+var tck = require('tck')
+
 var eem = {
   func : {},
   on : function (ev, callback) {
-    if (ev === undefined || ev === null || ev === "") throw new Error('Need event')
-    else if (ev instanceof Array) {
+    if (tck.isEmpty(ev)) throw new Error('Need event!')
+    else if (!tck.isFunction(callback)) throw new Error('Event needs a function!')
+    else if (tck.isArray(ev)) {
       for (var y = 0; y < ev.length; y++) {
-        if (typeof callback !== 'function') throw Error('Event need function')
-        else this.func[ev[y]] = callback
+        eem.func[ev[y]] = callback
       }
-    } else if (typeof callback !== 'function') throw Error('Event need function')
-    else this.func[ev] = callback
+    } else eem.func[ev] = callback
   },
   emit : function (ev, data) {
-    if (ev === undefined || ev === null || ev === "") throw new Error('No event selected.')
-    else if (ev instanceof Array) {
+    if (tck.isEmpty(ev)) throw new Error('No event selected.')
+    else if (tck.isArray(ev)) {
       for (var i = 0; i < ev.length; i++) {
-        if (typeof this.func[ev[i]] === 'function') this.func[ev[i]](data)
+        if (tck.isFunction(eem.func[ev[i]])) eem.func[ev[i]](data)
       }
-    } else if (typeof this.func[ev] === 'function') this.func[ev](data)
+    } else if (tck.isFunction(eem.func[ev])) {
+      eem.func[ev](data)
+    }
   },
   remove : function (ev) {
-    if (ev === undefined || ev === null || ev === "") throw new Error('No event selected.')
-    else if (this.func[ev] === undefined) throw Error('This event not exist')
-    else delete this.func[ev]
+    if (tck.isEmpty(ev)) throw new Error('No event selected.')
+    else if (!tck.isEmpty(eem.func[ev])) delete eem.func[ev]
   }
 }
 
