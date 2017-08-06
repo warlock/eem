@@ -15,7 +15,7 @@ const eem = require("eem")
 ```
 ## CDN for browser
 ```
-https://github.com/warlock/eem/blob/master/eem.js
+https://cdn.rawgit.com/warlock/eem/ea5bf2fb/eem.js
 ```
 
 ## Load in web browser
