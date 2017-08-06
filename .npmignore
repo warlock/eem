@@ -5,10 +5,9 @@ test
 .eslintrc.js
 .travis.yml
 *.swp
-build
 .DS_Store
 webpack.config.js
-test.js
 .vscode
 .jshintignore
 coverage
+eem.js
