@@ -6,15 +6,20 @@ eem
 http://npmjs.com/package/eem
 
 ```sh
-npm install eem
+npm install eem -S
 ```
 
-## Node.Js : Import module:
+## Import module in Node.js
 ```javascript
 const eem = require("eem")
 ```
+## CDN for browser
+```
+https://github.com/warlock/eem/blob/master/eem.js
+```
 
-## Web : Import module:
+## Load in web browser
+
 ```html
 <script src="eem/eem.js"></script>
 ```
