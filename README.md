@@ -49,9 +49,9 @@ eem.emit('hi', 'master')
 eem.emit(['hi', 'bye'], 'master')
 ```
 
-### Remove listener:
+### Delete listener:
 ```javascript
-eem.remove('hi')
+eem.delete('hi')
 ```
 
 ### License

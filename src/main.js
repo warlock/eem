@@ -36,7 +36,7 @@ const eem = {
    * @param {String} ev : The name of event for destroy.
    * @returns {undefined}
    */
-  remove: ev => {
+  delete: ev => {
     if (!tck.isEmpty(this.event_stack[ev])) delete this.event_stack[ev]
   }
 }
