@@ -11,3 +11,5 @@ webpack.config.js
 .jshintignore
 coverage
 eem.js
+package-lock.json
+test.js

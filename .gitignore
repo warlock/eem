@@ -1,6 +1,7 @@
 node_modules
 npm-debug.log
-test
+test.js
 *.swp
 .DS_Store
 coverage
+package-lock.json
