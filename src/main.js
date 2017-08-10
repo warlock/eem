@@ -1,14 +1,14 @@
 const tck = require('tck')
 
 const eem = {
-  event_stack : {},
+  event_stack: {},
   
   /**
    * @param {String} ev : The name of event.
    * @param {Function} callback : Function executed when event is triggered.
    * @returns {undefined}
    */
-  on : (ev, callback) => {
+  on: (ev, callback) => {
     if (tck.isEmpty(ev)) throw new Error('Need event key!')
     else if (!tck.isFunction(callback)) throw new Error('Event needs a function!')
     else if (tck.isArray(ev)) {
