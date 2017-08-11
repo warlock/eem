@@ -9,6 +9,7 @@ const eem = {
    * @returns {undefined}
    */
   on: (ev, callback) => {
+    if (tck.isEmpty(this.event_stack)) this.event_stack = {}
     if (tck.isEmpty(ev)) throw new Error('Need event key!')
     else if (!tck.isFunction(callback)) throw new Error('Event needs a function!')
     else if (tck.isArray(ev)) {
