@@ -38,7 +38,7 @@ const eem = {
    * @returns {undefined}
    */
   delete: ev => {
-    if (!tck.isEmpty(this.event_stack[ev])) delete this.event_stack[ev]
+    if (tck.isSet(this.event_stack[ev])) delete this.event_stack[ev]
   }
 }
 
