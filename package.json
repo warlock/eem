@@ -1,6 +1,6 @@
 {
   "name": "eem",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "Event Emitter for Node.js and Browser",
   "main": "src/main.js",
   "scripts": {
